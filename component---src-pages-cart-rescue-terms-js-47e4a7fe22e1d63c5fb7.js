@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhaleal_platform=self.webpackChunkwhaleal_platform||[]).push([[491],{39:function(e,t,r){r.r(t),r.d(t,{default:function(){return l}});var a=r(6540),n=r(4794),c=r(1579);function l(){return(0,a.useEffect)(()=>{(0,n.navigate)("/terms/",{replace:!0})},[]),a.createElement(c.A,{title:"Terms of Service",description:"Redirecting…",pathname:"/cart-rescue/terms"})}}}]);
+//# sourceMappingURL=component---src-pages-cart-rescue-terms-js-47e4a7fe22e1d63c5fb7.js.map
