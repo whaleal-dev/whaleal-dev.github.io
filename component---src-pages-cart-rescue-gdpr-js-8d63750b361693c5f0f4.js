@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhaleal_platform=self.webpackChunkwhaleal_platform||[]).push([[953],{6435:function(e,t,a){a.r(t),a.d(t,{default:function(){return l}});var n=a(6540),r=a(4794),c=a(1579);function l(){return(0,n.useEffect)(()=>{(0,r.navigate)("/gdpr/",{replace:!0})},[]),n.createElement(c.A,{title:"GDPR",description:"Redirecting…",pathname:"/cart-rescue/gdpr",noindex:!0})}}}]);
+//# sourceMappingURL=component---src-pages-cart-rescue-gdpr-js-8d63750b361693c5f0f4.js.map
