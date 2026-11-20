@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhaleal_home_site=self.webpackChunkwhaleal_home_site||[]).push([[2060],{1560:function(e,t,a){a.r(t),a.d(t,{default:function(){return r}});var c=a(6540),i=a(4794),n=a(8959);function r(){return(0,c.useEffect)(()=>{(0,i.navigate)("/privacy/",{replace:!0})},[]),c.createElement(n.A,{title:"Privacy Policy",description:"Redirecting…",pathname:"/cart-rescue/privacy",noindex:!0})}}}]);
+//# sourceMappingURL=component---src-pages-cart-rescue-privacy-js-bf6efb12f847d39c35ac.js.map

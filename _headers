@@ -1,0 +1,15 @@
+# Cloudflare Pages 自定义缓存头（2026-10-04 性能优化）
+# 默认策略是 max-age=14400, must-revalidate，对大图/视频过于保守。
+# 注意：/images 与 /videos 下的文件名不带 hash，内容更新时需同步更新引用或改文件名。
+
+/images/cards/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/images/*
+  Cache-Control: public, max-age=604800
+
+/favicon/*
+  Cache-Control: public, max-age=604800
+
+/videos/*
+  Cache-Control: public, max-age=604800

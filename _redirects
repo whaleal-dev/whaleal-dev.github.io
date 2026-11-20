@@ -1,0 +1,23 @@
+# Cloudflare Pages 重定向规则
+#
+# 🔴 2026-11-10：**已删除 `/de`、`/fr` 的 4 条 301**（原 2026-10-12 单语期的历史迁移规则）。
+#    德/法语已随「主站多语言」恢复，`/de/*`、`/fr/*` 由 `gatsby-node.js` 真实生成；
+#    旧规则若留着会把新页面直接重定向回英文，等于语言页永远打不开。
+#    ⇒ 这两套历史收录 URL 现在返回 200 且内容是对应语言，权重与外链原地保留，
+#      比 301 到英文更好。`scripts/check-i18n.mjs` 在 prebuild 会检查：
+#      已启用语言若仍存在前缀 301 规则，直接阻断构建。
+#    es / ja / zh 从未上线过，本就没有历史 301，无需任何规则。
+#
+# 规则写法说明：
+#   - `:splat` 是 Cloudflare Pages `_redirects` 的通配捕获（对应 `*`）。
+#   - 无尾斜杠的路径要单独写一条：`/messaging` 不匹配 `/messaging/*`。
+#   - 301 而非 302：永久迁移，302 不会把权重传下去。
+#
+# ⚠️ 只在 www 域生效（CF Pages 项目 whaleal-home）。docs 域走 GitHub Pages，
+#    那侧会忽略本文件。
+# ⚠️ 恢复/停用某语言时：停用才需要补 301；**恢复必须确认没有对应 301 残留**。
+
+# 产品线公开路径由 /messaging/ 改为 /platform/（2026-11-01）。旧地址永久跳转。
+/messaging          /platform/          301
+/messaging/         /platform/          301
+/messaging/*        /platform/:splat    301

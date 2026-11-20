@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhaleal_home_site=self.webpackChunkwhaleal_home_site||[]).push([[9824],{1636:function(e,t,a){a.r(t),a.d(t,{default:function(){return c}});var n=a(6540),l=a(4794),r=a(8959);function c(){return(0,n.useEffect)(()=>{(0,l.navigate)("/help/",{replace:!0})},[]),n.createElement(r.A,{title:"Help Center — Whaleal Cart",description:"Redirecting to Whaleal Cart Help / FAQ",pathname:"/cart-rescue",noindex:!0})}}}]);
+//# sourceMappingURL=component---src-pages-cart-rescue-index-js-e2403b6ffb33e6b83648.js.map
