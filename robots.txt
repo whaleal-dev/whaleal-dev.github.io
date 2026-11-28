@@ -1,0 +1,106 @@
+# whaleal.com — 静态营销站
+# 策略：搜索引擎与 AI 搜索引用爬虫放行；AI 训练爬虫禁止抓取原创内容。
+# Content-Signal 为版权权利声明（EU DSM 2019/790 Art.4）：search/ai-input 允许，ai-train 禁止。
+
+User-agent: *
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
+Disallow: /auth/
+Disallow: /404
+Allow: /
+
+# 搜索引擎（含百度）—— 必须放行
+# 🔴 2026-11-24：这些显式组必须**自带完整规则**，不能只写 `Allow: /`。
+#    robots.txt 的组选择是「最具体的 User-agent 组胜出、且不继承 * 组」——
+#    只写 Allow: / 时，GSC 会把 * 组的 Disallow /auth/ /404 与 Content-Signal
+#    报为「忽略的规则」（用户所见警告）。把规则逐组复刻可消除告警，
+#    并让按「首个匹配组 / 行顺序」实现的解析器也正确屏蔽 /auth/ /404。
+#    Disallow 写在 Allow 之前：兼容行顺序语义的解析器（Google 按最长路径，不受顺序影响）。
+User-agent: Googlebot
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
+Disallow: /auth/
+Disallow: /404
+Allow: /
+
+User-agent: Bingbot
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
+Disallow: /auth/
+Disallow: /404
+Allow: /
+
+User-agent: Slurp
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
+Disallow: /auth/
+Disallow: /404
+Allow: /
+
+User-agent: DuckDuckBot
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
+Disallow: /auth/
+Disallow: /404
+Allow: /
+
+User-agent: Baiduspider
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
+Disallow: /auth/
+Disallow: /404
+Allow: /
+
+User-agent: PetalBot
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
+Disallow: /auth/
+Disallow: /404
+Allow: /
+
+# AI 训练爬虫 —— 禁止抓取（不含代表用户实时访问的 Personal Agents）
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GoogleOther
+Disallow: /
+
+User-agent: Google-CloudVertexBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: MistralAI-Training
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: KimiBot
+Disallow: /
+
+Sitemap: https://docs.whaleal.com/sitemap-index.xml

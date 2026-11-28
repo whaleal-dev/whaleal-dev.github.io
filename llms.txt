@@ -1,0 +1,51 @@
+# Whaleal
+
+> Whaleal provides two products: Whaleal Cart, which recovers abandoned Shopify checkouts, and Whaleal Platform, a messaging orchestration layer that sends SMS, email, WhatsApp and short links over the provider accounts the customer already owns. Whaleal does not sell messaging credits or hold carrier relationships; customers keep their own accounts, numbers, quotas and billing.
+
+Whaleal is a B2B SaaS company. Its documentation and product surface are aimed at Shopify merchants (Cart) and developers or operations teams (Platform). All prices are in USD.
+
+## Whaleal Platform
+
+Messaging orchestration over bring-your-own-provider (BYOL) accounts. One send log and normalized receipts across channels; routing, automatic failover, per-connection pacing, opt-out suppression and segment accounting are implemented for the SMS channel. Customers pay their own providers directly; Whaleal charges a flat subscription with no per-message markup.
+
+- [Platform overview](https://www.whaleal.com/platform/): what the orchestration layer does, how a send works, and how to get started.
+- [Platform pricing](https://www.whaleal.com/platform/pricing/): four tiers from Free to Ultra, unlimited sending, differences in channel connections, submit rate and log retention.
+- [SMS over your own provider](https://www.whaleal.com/platform/sms/): routing and failover, pacing, normalized receipts, opt-out suppression and segment accounting.
+- [Channels and status](https://www.whaleal.com/platform/roadmap/): which channels are live today and their connection status.
+
+## Capabilities
+
+- [Features](https://www.whaleal.com/features/): BYOL connections, routing and failover, delivery receipts, pacing, sender identity, send API and receipt webhooks.
+- [Provider integrations](https://www.whaleal.com/integrations/): the SMS, email and WhatsApp providers Whaleal can connect to, with the credentials and configuration each one needs.
+- [Use cases](https://www.whaleal.com/use-cases/): the messages products send repeatedly.
+- [Industries](https://www.whaleal.com/industries/): messaging patterns by industry.
+- [Compare](https://www.whaleal.com/compare/): architectural trade-offs such as BYOL vs reselling, orchestration vs BSP, and multi-provider vs single-provider.
+
+## Guides and help
+
+- [Guides](https://www.whaleal.com/guides/): how orchestration works in practice — BYOL, SMS segments and billing, opt-out handling, delivery receipts, pacing, failover and compliance.
+- [Help center](https://www.whaleal.com/help/): connect a provider, send a first message, handle opt-out keywords, read receipts and diagnose messages that are accepted but never arrive.
+
+## Whaleal Cart
+
+Shopify app for abandoned checkout recovery. Captures abandoned checkouts and sends a timed recovery email sequence, with an optional recovery SMS on the store's own SMS account.
+
+- [Cart pricing](https://www.whaleal.com/pricing/): Free, Growth and Pro tiers, billed through Shopify.
+- [Cart features](https://www.whaleal.com/products/): timed email and SMS recovery, native Shopify discount codes and a revenue dashboard.
+- [Install](https://www.whaleal.com/install/): install Whaleal Cart on a Shopify store.
+- [AI email engine](https://www.whaleal.com/features/ai-email-engine/): optional subject lines, headings and intro copy for recovery emails, enabled manually by the merchant.
+- [Solutions](https://www.whaleal.com/solutions/): abandoned checkout recovery by scenario.
+
+## Company
+
+- [About](https://www.whaleal.com/about/): team, contact and support.
+- [Security](https://www.whaleal.com/security/): credential storage, tenant isolation and callback authentication.
+- [Contact](https://www.whaleal.com/contact/): support and partnerships.
+- [Documentation](https://docs.whaleal.com): technical documentation.
+- [Console](https://console.whaleal.com): customer login, channel connections and billing.
+
+## Optional
+
+- [Changelog](https://www.whaleal.com/changelog/)
+- [Service status](https://www.whaleal.com/status/)
+- [Site map](https://www.whaleal.com/sitemap/)
